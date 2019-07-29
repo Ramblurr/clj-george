@@ -1,0 +1,623 @@
+{
+ "categories": {
+  "income": [
+   {
+    "title": "REGULAR_INCOME",
+    "parent": null,
+    "direction": "IN"
+   },
+   {
+    "title": "SALARY",
+    "parent": "REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "PENSION",
+    "parent": "REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "BUSINESS_INCOME",
+    "parent": "REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "UNEMPLOYMENT_COMPENSATION",
+    "parent": "REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "MATERNITY_LEAVE",
+    "parent": "REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "FAMILY_ALLOWANCE",
+    "parent": "REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "ALIMONY",
+    "parent": "REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "OTHER_REGULAR_INCOME",
+    "parent": "REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "NON_REGULAR_INCOME",
+    "parent": null,
+    "direction": "IN"
+   },
+   {
+    "title": "RENTAL",
+    "parent": "NON_REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "CASH_DEPOSIT",
+    "parent": "NON_REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "OVERTIME_TRAVEL_COMPENSATION",
+    "parent": "NON_REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "INTERNAL_TRANSFER",
+    "parent": "NON_REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "ONLINE_SHOP",
+    "parent": "NON_REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "REIMBURSEMENT",
+    "parent": "NON_REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "SAVINGS_INVESTMENT_INCOME",
+    "parent": "NON_REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "INSURANCE_INCOME",
+    "parent": "NON_REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "OTHER_NON_REGULAR_INCOME",
+    "parent": "NON_REGULAR_INCOME",
+    "direction": "IN"
+   },
+   {
+    "title": "UNCATEGORIZED_INCOME",
+    "parent": null,
+    "direction": "IN"
+   },
+   {
+    "title": "UNCATEGORIZED_INCOME",
+    "parent": "UNCATEGORIZED_INCOME",
+    "direction": "IN"
+   }
+  ],
+  "outflow": [
+   {
+    "title": "LIVING_AND_ENERGY",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "RENT",
+    "parent": "LIVING_AND_ENERGY",
+    "direction": "OUT"
+   },
+   {
+    "title": "HOUSE_LOAN",
+    "parent": "LIVING_AND_ENERGY",
+    "direction": "OUT"
+   },
+   {
+    "title": "ENERGY",
+    "parent": "LIVING_AND_ENERGY",
+    "direction": "OUT"
+   },
+   {
+    "title": "UTILITY_BILLS",
+    "parent": "LIVING_AND_ENERGY",
+    "direction": "OUT"
+   },
+   {
+    "title": "WASTE_DISPOSAL",
+    "parent": "LIVING_AND_ENERGY",
+    "direction": "OUT"
+   },
+   {
+    "title": "SEWER_FEES",
+    "parent": "LIVING_AND_ENERGY",
+    "direction": "OUT"
+   },
+   {
+    "title": "INSURANCE",
+    "parent": "LIVING_AND_ENERGY",
+    "direction": "OUT"
+   },
+   {
+    "title": "IMPROVEMENTS_AND_FURNITURE",
+    "parent": "LIVING_AND_ENERGY",
+    "direction": "OUT"
+   },
+   {
+    "title": "CLEANING",
+    "parent": "LIVING_AND_ENERGY",
+    "direction": "OUT"
+   },
+   {
+    "title": "PET_CARE",
+    "parent": "LIVING_AND_ENERGY",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_LIVING_AND_ENERGY",
+    "parent": "LIVING_AND_ENERGY",
+    "direction": "OUT"
+   },
+   {
+    "title": "FOOD",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "FOOD_SHOPPING",
+    "parent": "FOOD",
+    "direction": "OUT"
+   },
+   {
+    "title": "RESTAURANT",
+    "parent": "FOOD",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_FOOD",
+    "parent": "FOOD",
+    "direction": "OUT"
+   },
+   {
+    "title": "HEALTH",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "DRUGSTORE",
+    "parent": "HEALTH",
+    "direction": "OUT"
+   },
+   {
+    "title": "PHARMACY",
+    "parent": "HEALTH",
+    "direction": "OUT"
+   },
+   {
+    "title": "COSMETICS",
+    "parent": "HEALTH",
+    "direction": "OUT"
+   },
+   {
+    "title": "DOCTORS_HOSPITAL",
+    "parent": "HEALTH",
+    "direction": "OUT"
+   },
+   {
+    "title": "LIFE_HEALTH_INSURANCE",
+    "parent": "HEALTH",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_HEALTH",
+    "parent": "HEALTH",
+    "direction": "OUT"
+   },
+   {
+    "title": "CLOTHING",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "FASHION",
+    "parent": "CLOTHING",
+    "direction": "OUT"
+   },
+   {
+    "title": "SHOES",
+    "parent": "CLOTHING",
+    "direction": "OUT"
+   },
+   {
+    "title": "ACCESSORIES",
+    "parent": "CLOTHING",
+    "direction": "OUT"
+   },
+   {
+    "title": "COMMUNICATION",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "PHONE_BILLS",
+    "parent": "COMMUNICATION",
+    "direction": "OUT"
+   },
+   {
+    "title": "TELEVISION",
+    "parent": "COMMUNICATION",
+    "direction": "OUT"
+   },
+   {
+    "title": "INTERNET",
+    "parent": "COMMUNICATION",
+    "direction": "OUT"
+   },
+   {
+    "title": "ENTERTAINMENT_ELECTRONICS",
+    "parent": "COMMUNICATION",
+    "direction": "OUT"
+   },
+   {
+    "title": "LEISURE",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "AMUSEMENT",
+    "parent": "LEISURE",
+    "direction": "OUT"
+   },
+   {
+    "title": "HOBBIES_SPORT",
+    "parent": "LEISURE",
+    "direction": "OUT"
+   },
+   {
+    "title": "READING",
+    "parent": "LEISURE",
+    "direction": "OUT"
+   },
+   {
+    "title": "TOYS_GAMES",
+    "parent": "LEISURE",
+    "direction": "OUT"
+   },
+   {
+    "title": "TOBACCONIST",
+    "parent": "LEISURE",
+    "direction": "OUT"
+   },
+   {
+    "title": "BETTING",
+    "parent": "LEISURE",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_LEISURE",
+    "parent": "LEISURE",
+    "direction": "OUT"
+   },
+   {
+    "title": "EDUCATION",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "KINDERGARTEN_SCHOOL_UNIVERSITY",
+    "parent": "EDUCATION",
+    "direction": "OUT"
+   },
+   {
+    "title": "BOOKS_SUPPLIES",
+    "parent": "EDUCATION",
+    "direction": "OUT"
+   },
+   {
+    "title": "TUITION",
+    "parent": "EDUCATION",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_EDUCATION",
+    "parent": "EDUCATION",
+    "direction": "OUT"
+   },
+   {
+    "title": "CAR",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "CAR_PURCHASE_LOAN",
+    "parent": "CAR",
+    "direction": "OUT"
+   },
+   {
+    "title": "GAS_FUEL",
+    "parent": "CAR",
+    "direction": "OUT"
+   },
+   {
+    "title": "CAR_MAINTENANCE",
+    "parent": "CAR",
+    "direction": "OUT"
+   },
+   {
+    "title": "CAR_INSURANCE",
+    "parent": "CAR",
+    "direction": "OUT"
+   },
+   {
+    "title": "PARKING",
+    "parent": "CAR",
+    "direction": "OUT"
+   },
+   {
+    "title": "TOLLS",
+    "parent": "CAR",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_CAR",
+    "parent": "CAR",
+    "direction": "OUT"
+   },
+   {
+    "title": "TRANSPORT",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "PUBLIC_TRANSPORT",
+    "parent": "TRANSPORT",
+    "direction": "OUT"
+   },
+   {
+    "title": "TAXI",
+    "parent": "TRANSPORT",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_TRANSPORT",
+    "parent": "TRANSPORT",
+    "direction": "OUT"
+   },
+   {
+    "title": "TRAVEL_HOLIDAYS",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "HOLIDAY_ACCOMODATION",
+    "parent": "TRAVEL_HOLIDAYS",
+    "direction": "OUT"
+   },
+   {
+    "title": "HOLIDAY_FOOD_DRINKS",
+    "parent": "TRAVEL_HOLIDAYS",
+    "direction": "OUT"
+   },
+   {
+    "title": "HOLIDAY_EXPENSES",
+    "parent": "TRAVEL_HOLIDAYS",
+    "direction": "OUT"
+   },
+   {
+    "title": "FOREIGN_CURRENCY",
+    "parent": "TRAVEL_HOLIDAYS",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_HOLIDAY",
+    "parent": "TRAVEL_HOLIDAYS",
+    "direction": "OUT"
+   },
+   {
+    "title": "WITHDRAWAL",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "ATM_WITHDRAWAL",
+    "parent": "WITHDRAWAL",
+    "direction": "OUT"
+   },
+   {
+    "title": "BRANCH_WITHDRAWAL",
+    "parent": "WITHDRAWAL",
+    "direction": "OUT"
+   },
+   {
+    "title": "CREDIT_CARD_WITHDRAWAL",
+    "parent": "WITHDRAWAL",
+    "direction": "OUT"
+   },
+   {
+    "title": "CREDIT_CARD_BILL",
+    "parent": "WITHDRAWAL",
+    "direction": "OUT"
+   },
+   {
+    "title": "QUICK_CHARGING",
+    "parent": "WITHDRAWAL",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_WITHDRAWAL",
+    "parent": "WITHDRAWAL",
+    "direction": "OUT"
+   },
+   {
+    "title": "ALIMONY_POCKET_MONEY",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "POCKET_MONEY",
+    "parent": "ALIMONY_POCKET_MONEY",
+    "direction": "OUT"
+   },
+   {
+    "title": "ALIMONEY",
+    "parent": "ALIMONY_POCKET_MONEY",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_ALIMONY_POCKET_MONEY",
+    "parent": "ALIMONY_POCKET_MONEY",
+    "direction": "OUT"
+   },
+   {
+    "title": "ONLINE_SHOPPING",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "UNCATEGORIZED_ONLINE_SHOPPING",
+    "parent": "ONLINE_SHOPPING",
+    "direction": "OUT"
+   },
+   {
+    "title": "SAVINGS_INVESTMENT",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "SAVINGS",
+    "parent": "SAVINGS_INVESTMENT",
+    "direction": "OUT"
+   },
+   {
+    "title": "BUILDING_SOCIETY",
+    "parent": "SAVINGS_INVESTMENT",
+    "direction": "OUT"
+   },
+   {
+    "title": "CAPITALIZATION_PRODUCTS",
+    "parent": "SAVINGS_INVESTMENT",
+    "direction": "OUT"
+   },
+   {
+    "title": "SECURITIES",
+    "parent": "SAVINGS_INVESTMENT",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_SAVINGS",
+    "parent": "SAVINGS_INVESTMENT",
+    "direction": "OUT"
+   },
+   {
+    "title": "TAXES",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "PERSONAL_INCOME_TAX",
+    "parent": "TAXES",
+    "direction": "OUT"
+   },
+   {
+    "title": "VALUE_ADDED_TAX",
+    "parent": "TAXES",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_TAXES",
+    "parent": "TAXES",
+    "direction": "OUT"
+   },
+   {
+    "title": "FEES",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "INTERNAL_TRANSFERS",
+    "parent": "FEES",
+    "direction": "OUT"
+   },
+   {
+    "title": "FEES",
+    "parent": "FEES",
+    "direction": "OUT"
+   },
+   {
+    "title": "INTERESTS",
+    "parent": "FEES",
+    "direction": "OUT"
+   },
+   {
+    "title": "LENDING",
+    "parent": "FEES",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_FEES",
+    "parent": "FEES",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_EXPENSES",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "FINANCING",
+    "parent": "OTHER_EXPENSES",
+    "direction": "OUT"
+   },
+   {
+    "title": "INSURANCE_PREMIUM",
+    "parent": "OTHER_EXPENSES",
+    "direction": "OUT"
+   },
+   {
+    "title": "SOCIAL_INSURANCE",
+    "parent": "OTHER_EXPENSES",
+    "direction": "OUT"
+   },
+   {
+    "title": "GIFTS",
+    "parent": "OTHER_EXPENSES",
+    "direction": "OUT"
+   },
+   {
+    "title": "DONATIONS",
+    "parent": "OTHER_EXPENSES",
+    "direction": "OUT"
+   },
+   {
+    "title": "PENALTIES_GOVERNMENTS",
+    "parent": "OTHER_EXPENSES",
+    "direction": "OUT"
+   },
+   {
+    "title": "OTHER_FINANCING",
+    "parent": "OTHER_EXPENSES",
+    "direction": "OUT"
+   },
+   {
+    "title": "UNCATEGORIZED_EXPENSE",
+    "parent": null,
+    "direction": "OUT"
+   },
+   {
+    "title": "UNCATEGORIZED_EXPENSE",
+    "parent": "UNCATEGORIZED_EXPENSE",
+    "direction": "OUT"
+   }
+  ]
+ }
+}
